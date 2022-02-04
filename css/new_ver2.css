@@ -58,15 +58,32 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
 }
 @media only screen and (max-width: 768px) {
     #SECTION01 .text-box { top: 200px; text-align: center; }
-    #SECTION01 .boo img{position: relative; width: 100%; margin-top: 450px; margin-bottom: 100px;}
+    #SECTION01 .boo img{position: relative; width: 100%; margin-top: 350px; margin-bottom: 100px;}
  }
 #SECTION01 .title-text strong { font-weight: 600; }
 #SECTION01 .title-text .underline { position: relative; z-index: 1;}
 #SECTION01 .title-text .underline > span { position: absolute; left: -2%; bottom: 8px; width: 104%; height: 24px; background: rgba(43, 157, 255, 0.442); z-index: -1; }
+
 /* 서브 타이틀 */
 #SECTION01 .subtitle-text { margin-top: 15px; font-size: 25px; letter-spacing: -1px; }
 @media only screen and (max-width: 768px) {
     #SECTION01 .subtitle-text { font-size: 35px; text-align:center;}
+}
+
+/* 스토어 링크 이미지 */
+#SECTION01 .store-link-box { margin-top: 45px; width: 100%; }
+#SECTION01 .store-link-box img{ max-width: 217px;  }
+#SECTION01 .store-link-box li { display: inline-block; text-align: center; }
+
+@media only screen and (max-width: 609px) {
+    #SECTION01 .store-link-box { width: 100%; }
+}
+@media only screen and (max-width: 768px) {
+    #SECTION01 .store-link-box { width: 100%; }
+    #SECTION01 .store-link-box ul { text-align: center; margin: 0 auto; }
+    #SECTION01 #store-btn-ul li{ padding: 10px 0 0 0; }
+    #SECTION01 #store-btn-ul img{ width: 400px; }
+        
 }
 /************************************************************** SECTION02 **************************************************************/
 #SECTION02 { width: 100%; min-height: 450px; text-align: center; }
@@ -314,7 +331,7 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
 	#SECTION01B .img-wrap img { width: 90%; }
 }
 @media only screen and (max-width: 768px) {
-    #SECTION01B .img-wrap { margin-top: 0; }
+    #SECTION01B .img-wrap { margin-top: 20px; }
     #SECTION01B .img-wrap img { width: 100%; margin: auto; }    
 }
 /************************************************************** SECTION05(step2) **************************************************************/
@@ -367,7 +384,7 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
 	#SECTION02B .img-wrap img { width: 90%; }
 }
 @media only screen and (max-width: 768px) {
-    #SECTION02B .img-wrap { margin-top: 0; }
+    #SECTION02B .img-wrap { margin-top: 22px; }
     #SECTION02B .img-wrap img { width: 550px; margin: auto;  height: 850px;  }    
 }
 
@@ -502,7 +519,7 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
     #SECTION06 { min-height: 1000px; }
 }
 /* 함께하는 기업들 */
-#SECTION06 .title-text { margin-top: 250px; font-size: 52px; color: #292929; font-weight: 600; }
+#SECTION06 .title-text { margin-top: 200px; font-size: 52px; color: #292929; font-weight: 600; }
 #SECTION06 .subtitle-text { margin-top: 25px; font-size: 22px; color: #868687; }
 #SECTION06 .company-img { margin-top: 126px; }
 #SECTION06 .company-img img{ max-width: 1000px; }
@@ -511,6 +528,9 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
 }
 /* 수상내역& */
 #SECTION06 .second-title-text { margin-top: 301px; font-size: 52px; color: #292929; font-weight: 600; }
+@media only screen and (max-width: 768px) {
+    #SECTION06 .second-title-text span{ display: block; }
+}
 #SECTION06 .awards-img { width: 60%; margin: 161px auto 0 auto; }
 #SECTION06 .awards-img li { display: inline-block; width: 33%; text-align: center; }
 #SECTION06 .awards-img img { max-width: 300px; }
@@ -560,7 +580,7 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
 /* 소제목 */
 #SECTION08 .subtitle-text { margin-top: 25px; font-size: 25px; color: #0F58CE; }
 @media only screen and (max-width: 768px) {
-    #SECTION08 .subtitle-text { margin-top: 8px; font-size: 33px;}
+    #SECTION08 .subtitle-text { margin-top: 30px; font-size: 33px;}
     #SECTION08 .subtitle-text span { display: block; }
 }
 
@@ -592,7 +612,7 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
         border: 0;
         border-radius: 100px;
         line-height: 20px;
-        max-width: 480px;
+        max-width: 300px;
         min-height: 75px;
         min-width: 0px;
         width: 100%;
@@ -601,42 +621,49 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
         padding-right: 20px;
         cursor: pointer;
         height: 40px;
-        background: #cde7ff;
+        background: #006BEF;
         color: #FFFFFF;
         border-radius: 40px;
         border: none;
         transition: all 0.5s;
         vertical-align: middle;
         font-size: 25px;
-        margin-left: 20px;
+        margin-top: 70px;
+    }
+    @media only screen and (max-width: 768px) {
+        #SECTION08 .email_button_click { margin-top: 80px; }
     }
 
-    #SECTION08 .email_button_click.on {
-        background: #006BEF;
-        color: #FFFFFF;
-    }
 
-#SECTION08 .d-none {
-        display: none !important;
-    }
 
-    button,
-    [type=button],
-    [type=reset],
-    [type=submit] {
-      -webkit-appearance: button;
-    }
-    button:not(:disabled),
-    [type=button]:not(:disabled),
-    [type=reset]:not(:disabled),
-    [type=submit]:not(:disabled) {
-      cursor: pointer;
-    }
+/************************************************************** SECTION11 **************************************************************/
+
+/* 큰제목 */
+#SECTION11 .title-text { padding-top: 200px; font-size: 52px; color: #292929; font-weight: 600; }
+@media only screen and (max-width: 768px) {
+	#SECTION11 .title-text { font-size: 55px; }
+    #SECTION11 .title-text span { display: block; }
+}
+/* 소제목 */
+#SECTION11 .subtitle-text { margin-top: 25px; font-size: 25px; color: #0F58CE; }
+@media only screen and (max-width: 768px) {
+    #SECTION11 .subtitle-text { margin-top: 30px; font-size: 15px;}
+    #SECTION11 .subtitle-text span { display: block; }
+}
+
+/* 이미지 */
+#SECTION11 .img-box {width: 100%; text-align: center; background-color: #A3C6FF; height: 150px;}
+@media only screen and (max-width: 1100px) {
+	#SECTION11 .img-box { width: 100%; }
+}
+@media only screen and (max-width: 768px) {
+    #SECTION11 .img-box { margin-top: 0; }   
+}
 
 /************************************************************** SECTION09 **************************************************************/
-#SECTION09 { position: relative; width: 100%; height: 1232px; text-align: left; background-color:#F0F8FF; background-size: cover; background-position: 50%; }
+#SECTION09 { position: relative; width: 100%; height: 1000px; text-align: left; background-color:#F0F8FF; background-size: cover; background-position: 50%; }
 @media only screen and (max-width: 768px) {
-    #SECTION09 { height: 1218px; background-color:#F0F8FF no-repeat; background-size: cover; background-position: 50%; }
+    #SECTION09 { height: 1000px; background-color:#F0F8FF no-repeat; background-size: cover; background-position: 50%; }
 }
 #SECTION09 .content-box { position: absolute; left: 60%; padding-top: 403px; }
 @media only screen and (max-width: 768px) {
@@ -657,10 +684,10 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
 #SECTION09 .store-link-box li { display: inline-block; text-align: center; }
 
 @media only screen and (max-width: 609px) {
-    #SECTION09 .store-link-box { margin-top: 601px; width: 100%; }
+    #SECTION09 .store-link-box { margin-top: 0px; width: 100%; }
 }
 @media only screen and (max-width: 768px) {
-    #SECTION09 .store-link-box { margin-top: 651px; width: 100%; }
+    #SECTION09 .store-link-box { margin-top: 58px; width: 100%; }
     #SECTION09 .store-link-box ul { text-align: center; margin: 0 auto; }
     #SECTION09 #store-btn-ul li{ padding: 10px 0 0 0; }
     #SECTION09 #store-btn-ul img{ width: 400px; }

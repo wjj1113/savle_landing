@@ -5,84 +5,6 @@ function preload(arrayOfImages) {
     });
 }
 
-// 제출하기 버튼 선택 시 텍스트 변경
-/*function changeBtnName()  {
-    const btnElement = document.getElementById('subscribe-button');
-    btnElement.innerText = '완료!';
-
-    const html 
-    = '<div style="color:red"> 새이름!! </div>';
-    btnElement.innerHTML = html;
-
-} */
-
-// 메일 구독 스크립트
-function subscribe(){
-    var email = $("#email").val();
-    
-    if(!email){
-        alert("이메일 주소를 입력하세요.");
-        return;
-    }
-
-    const btnElement = document.getElementById('subscribe-button')
-    const html = '<div style="color: #8FC9FF"> 완료! </div>';
-    btnElement.innerHTML = html
-
-    
-    $.ajax({
-        type: "POST",
-        url: "https://api.savle.net/v1/pre-marketing/register-email",
-        dataType: "json",
-        /* etc도 있음, 추후에 사용할 경우에 해당 변수 추가 */
-        data: { "email": email, "channel": "landing" },
-        cache: false,
-        async: false,
-        success: function(data) {
-            // result = data;
-            // console.log(data.result);
-            if(data.result=="SUCCESS"){
-                alert("출시 소식 신청이 되었습니다.");
-            }else{
-                alert("Oops, 정상적으로 처리가 안되었습니다.");
-            }
-        },
-    });
-
-}
-
-
-/* 이메일 입력창의 힌트 메세지 세팅 */
-function setEmailInputPlaceholderText(){
-    if( $(this).width() < 769 ) {
-        $("#email").attr('placeholder', '이메일 입력하고 출시 소식 받기');
-    } else {
-        $("#email").attr('placeholder', '이메일 입력하고 출시 소식 받기');
-    }
-}
-
-/* 이메일 입력 시 버튼 활성화 */
-$('.input_email').on('input', checkInput);
-
-// input 입력 시에 checkInput 함수실행
-function checkInput() {
-  var idCheck = $('.input_email').val();   // idCheck 변수
-  var btnLogin = $('.email_button_click');
-
-  if (idCheck === '') {
-    // 기본 로그인 버튼 색상
-    btnLogin.removeClass('on');
-  } else {
-    // 이메일 입력 시에 로그인 버튼 배경색 변경
-    btnLogin.addClass('on');
-  }
-
-
-}
-
-
-
-  
 
 
 // 로드 완료
@@ -190,22 +112,13 @@ $(document).ready(function(){
         customDirectionNav: $(".slide-mobile-nav-wrap a"),
     });
 
-    /* 이메일 입력창의 힌트 메세지 세팅 */
-    setEmailInputPlaceholderText();
 
     // 슬라이더 다음 이미지 프리로딩
     preload([
-        '/images/main_pc/g4_01.png',
-        '/images/main_pc/g4_02.png',
-        '/images/main_pc/g4_03.png'
+
     ]);
     preload([
-        '/images/main_pc/g5_01.png',
-        '/images/main_pc/g5_02.png',
-        '/images/main_pc/g5_03.png',
-        '/images/main_pc/g5_04.png',
-        '/images/main_pc/g5_05.png',
-        '/images/main_pc/g5_06.png'
+
     ]);
 });
 
