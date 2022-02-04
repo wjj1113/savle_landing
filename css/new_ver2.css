@@ -326,7 +326,7 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
 }
 /* [IN] .img-box // 이미지 부분 */
 #SECTION01B .img-wrap {margin: auto;}
-#SECTION01B .img-wrap img{width: auto;}
+#SECTION01B .img-wrap img{width: auto; margin-top: 40px;}
 @media only screen and (max-width: 1100px) {
 	#SECTION01B .img-wrap img { width: 90%; }
 }
@@ -379,7 +379,7 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
 }
 /* [IN] .img-box // 이미지 부분 */
 #SECTION02B .img-wrap {margin: auto;}
-#SECTION02B .img-wrap img{width: auto; height: 950px;}
+#SECTION02B .img-wrap img{width: auto; height: 950px; margin-top: 10px;}
 @media only screen and (max-width: 1100px) {
 	#SECTION02B .img-wrap img { width: 90%; }
 }
@@ -451,8 +451,20 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
     #SECTION03B .step-box, #SECTION03B .tabs-box, #SECTION03B .img-box { width: 100%; margin: 0 auto; text-align:center;}
     #SECTION03B .step-box { top: 90px; left: 50%; transform: translateX(-50%); max-width: 614px; z-index: 3; }
     #SECTION03B .tabs-box { top: 350px; left: auto; min-height: 226px; z-index: 2;}
-    #SECTION03B .img-box { top: 700px; left: 51%; transform: translateX(-50%); width: 712px; z-index: 1; }
+    #SECTION03B .img-box { top: 600px; left: 51%; transform: translateX(-50%); width: 712px; z-index: 1; }
 }
+
+/* [IN] .img-box // 이미지 부분 */
+#SECTION03B .img-wrap {margin: auto;}
+#SECTION03B .img-wrap img{width: auto; margin-top: 40px;}
+@media only screen and (max-width: 1100px) {
+	#SECTION03B .img-wrap img { width: 90%; }
+}
+@media only screen and (max-width: 768px) {
+    #SECTION03B .img-wrap { margin-top: 20px; }
+    #SECTION03B .img-wrap img { width: 100%; margin: auto; }    
+}
+
 /* [IN] .step-box // 스텝 타이틀 */
 #SECTION03B .step-title {margin-bottom: 30px;}
 #SECTION03B .underline { margin-top: 10px; display: block; background: #8FC9FF; width: 535px; height: 5px; z-index: 1; }
@@ -572,7 +584,7 @@ body { background:#ffffff; color:#5a5a5a; font-size:0.75em; font-family:'Noto Sa
 }
 
 /* 큰제목 */
-#SECTION08 .title-text { padding-top: 100px; font-size: 52px; color: #292929; font-weight: 600; }
+#SECTION08 .title-text { padding-top: 90px; font-size: 52px; color: #292929; font-weight: 600; }
 @media only screen and (max-width: 768px) {
 	#SECTION08 .title-text { font-size: 55px; }
     #SECTION08 .title-text span { display: block; }
